@@ -54,9 +54,9 @@ export class CategoryService {
   }
 
   //PRIVATE METHODS
-  private jsonDataToCategories(jsonDAta: any[]): Category[]{
+  private jsonDataToCategories(jsonData: any[]): Category[]{
     const categories: Category[] = [];
-    jsonDAta.forEach(element => categories.push(element as Category));
+    jsonData.forEach(element => categories.push(element as Category));
     return categories;
   }
 
