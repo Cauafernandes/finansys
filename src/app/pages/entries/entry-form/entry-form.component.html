@@ -83,7 +83,7 @@
         <div class="form-group col-md-3">
           <label for="categoryID">Categoria</label>
           <select name="categoryID" id="categoryID" formControlName="categoryID" class="form-control">
-            <option *ngFor="let category of categories" value="category.id">{{ category.name }}</option>
+            <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
           </select>
           <div class="text-danger" *ngIf="entryForm.get('categoryID').invalid && entryForm.get('categoryID').touched">
             <div *ngIf="entryForm.get('categoryID').errors.required">Dado obrigatório</div>
